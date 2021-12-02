@@ -1,5 +1,7 @@
 package ca.durhamcollege.utility;
 
+import java.util.Random;
+
 /* Static Container Class */
 public class Mathf {
     //static constants
@@ -14,6 +16,18 @@ public class Mathf {
 
     //Protects the Mathf class from being instantiated
     private Mathf() {
+    }
+
+    public static float RandomRange(final float min, final float max)
+    {
+        Random random = new Random();
+        return (random.nextFloat() * (max - min) + min);
+    }
+
+    public static int RandomRange(final int min, final int max)
+    {
+        Random random = new Random();
+        return (random.nextInt() * (max - min) + min);
     }
 
     public static float Sin(final float f) {
