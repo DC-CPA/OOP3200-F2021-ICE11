@@ -16,6 +16,7 @@ public class Main {
         //instantiates the collection container
         Vector<Vector2D> points = new Vector<Vector2D>();
 
+
         //builds a vector of 4 points
         for (int i = 0; i < numberOfPoints; i++) {
             points.add(Vector2D.zero());
